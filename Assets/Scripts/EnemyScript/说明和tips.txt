@@ -1,0 +1,4 @@
+玩家的Object名字必须叫Player，
+玩家的刚体不能休眠，必须neversleep， 
+这个文件夹下面的材质和TestPlayer和那个输入检测后面都要删了
+所有敌人必须tag是Enemy，玩家的tag必须是Player
