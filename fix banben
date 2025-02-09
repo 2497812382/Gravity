@@ -1,0 +1,193 @@
+[33mcommit eff47c225fe2a12c69e0c7d1efe00f04338265b3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mDev[m[33m)[m
+Merge: 59e6347 587afaa
+Author: Aminos <2497812382@qq.com>
+Date:   Sun Feb 9 19:01:43 2025 +0800
+
+    Merge branch 'Dev' of github.com:2497812382/Gravity into Dev
+
+[33mcommit 59e63477974c9885dedb9c738b1c7af0d8431a8f[m
+Author: Aminos <2497812382@qq.com>
+Date:   Sun Feb 9 19:00:00 2025 +0800
+
+    解决controller冲突
+
+[33mcommit 587afaa754b6e8a95584f3c9a80602e18f49f892[m[33m ([m[1;31morigin/Dev[m[33m)[m
+Merge: a4b9507 800079f
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 18:58:50 2025 +0800
+
+    Merge pull request #12 from 2497812382/TestMap
+    
+    TestMap
+
+[33mcommit 800079f4b7afd8682e3740b39b372d6f476c5d7a[m[33m ([m[1;31morigin/TestMap[m[33m)[m
+Merge: ade3768 a4b9507
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 18:58:41 2025 +0800
+
+    Merge branch 'Dev' into TestMap
+
+[33mcommit a4b95076118f40bca72f742d0f99234752a3765e[m
+Merge: 9d0c521 31086a3
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 18:46:39 2025 +0800
+
+    Merge pull request #11 from 2497812382/player
+    
+    Player
+
+[33mcommit 31086a3994da93137ee6ced3cf90c34f14d6648b[m
+Author: Xiangfei  Xu <1821285979@qq.com>
+Date:   Sun Feb 9 17:28:03 2025 +0800
+
+    Add files via upload
+
+[33mcommit c8e03bd8f518c6e955720d462c4d022f273de63b[m
+Author: Xiangfei  Xu <1821285979@qq.com>
+Date:   Sun Feb 9 17:19:57 2025 +0800
+
+    Add files via upload
+
+[33mcommit 9d0c521561359df589b5bf7aca779ff4994577a3[m
+Merge: bf7e39e d0e354d
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 16:54:05 2025 +0800
+
+    Merge pull request #10 from 2497812382/BulletCollision
+    
+    子弹碰撞消失
+
+[33mcommit d0e354d4fdb3a001be3d90e45b8568b44231d5d6[m[33m ([m[1;31morigin/BulletCollision[m[33m, [m[1;32mBulletCollision[m[33m)[m
+Author: Aminos <2497812382@qq.com>
+Date:   Sun Feb 9 16:51:14 2025 +0800
+
+    子弹碰撞消失
+
+[33mcommit bf7e39e8f5511b8d859e9d6a0ec834dd18723c70[m[33m ([m[1;32mMonsterCreate[m[33m)[m
+Merge: 0078f31 f297418
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 15:13:05 2025 +0800
+
+    Merge pull request #8 from 2497812382/PlatformandDoor
+    
+    Platformand door
+
+[33mcommit ade3768fbf4a8260e44b52da03143771ddc4a4c0[m
+Author: happy1041 <qq1041637640@163.com>
+Date:   Sun Feb 9 15:03:26 2025 +0800
+
+    TestMap
+
+[33mcommit f297418bf3c69c501fc2cd965b8a753f9323988d[m
+Author: happy1041 <qq1041637640@163.com>
+Date:   Sun Feb 9 14:16:17 2025 +0800
+
+    Door Prefab added
+
+[33mcommit 92f3aaec729070d51cde2dd4fa3ab422031564f8[m
+Author: happy1041 <qq1041637640@163.com>
+Date:   Sun Feb 9 14:15:07 2025 +0800
+
+    Door Added
+
+[33mcommit b0175493e1edd3ac94524a2d5dedf199c995f974[m[33m ([m[1;31morigin/Platform[m[33m)[m
+Author: happy1041 <qq1041637640@163.com>
+Date:   Sun Feb 9 12:48:23 2025 +0800
+
+    测试用素材
+
+[33mcommit 92330baa8a1e43d82799b27c346f2e9bb26a7ef5[m
+Author: happy1041 <qq1041637640@163.com>
+Date:   Sun Feb 9 12:44:57 2025 +0800
+
+    Platform
+
+[33mcommit 0078f31410048e342f362ff90d8547e318989dde[m
+Merge: b86cc72 405b49f
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 12:25:27 2025 +0800
+
+    Merge pull request #7 from 2497812382/feat-Enemy
+    
+    为敌人和玩家单独设置了子弹tag
+
+[33mcommit 405b49fa5047f00aaed335eeb64e8cdf715e0432[m
+Author: Aminos <2497812382@qq.com>
+Date:   Sun Feb 9 12:23:56 2025 +0800
+
+    为敌人和玩家单独设置了子弹tag
+
+[33mcommit b86cc72fa2fae3acabf387ea93c7ab65a3b15cb9[m
+Merge: b671ef2 be31dde
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 01:17:42 2025 +0800
+
+    Merge pull request #6 from 2497812382/revert-5-revert-2-feat-Enemy
+    
+    敌人和玩家的攻击脚本和预制体
+
+[33mcommit be31dde9f083d10b119293d978c6ba7245eb8299[m
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 01:16:21 2025 +0800
+
+    Revert "Revert 2 feat enemy"
+
+[33mcommit b671ef22aefe6068ccbe7c44bc9a1152de5a5099[m
+Merge: 7455389 e4439e6
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 01:01:12 2025 +0800
+
+    Merge pull request #5 from 2497812382/revert-2-feat-Enemy
+    
+    Revert 2 feat enemy
+
+[33mcommit e4439e6d19ccee04de524a2f198539322360033a[m
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 01:00:47 2025 +0800
+
+    Revert "敌人和玩家的攻击功能"
+
+[33mcommit 74553894c27353c1c34e99839494f38c150c2e14[m
+Merge: e6d9ae1 7d0e1d4
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 00:51:00 2025 +0800
+
+    Merge pull request #4 from 2497812382/feat-Enemy
+    
+    敌人和玩家的攻击功能
+
+[33mcommit 7943ea4610dabd061463143d99a4f367bd98d998[m
+Merge: ea7d8bd 7d0e1d4
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Sun Feb 9 00:43:50 2025 +0800
+
+    Merge pull request #2 from 2497812382/feat-Enemy
+    
+    敌人和玩家的攻击功能
+
+[33mcommit 7d0e1d43e720b76369074c9abf29b952191abefb[m
+Author: Aminos <2497812382@qq.com>
+Date:   Sun Feb 9 00:36:43 2025 +0800
+
+    敌人和玩家的攻击功能
+
+[33mcommit ea7d8bdf594afc889ce4a86ea9e1b00a89f60fce[m
+Merge: c16ef86 e6d9ae1
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Fri Feb 7 15:59:16 2025 +0800
+
+    Merge pull request #1 from 2497812382/master
+    
+    首次提交
+
+[33mcommit e6d9ae1ebdc8967c1311b6ef43fdb9bae25266f9[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mmaster[m[33m, [m[1;32mmain[m[33m, [m[1;32mattack[m[33m)[m
+Author: Aminos <2497812382@qq.com>
+Date:   Fri Feb 7 15:56:13 2025 +0800
+
+    首次提交
+
+[33mcommit c16ef86e8193c9f1bbd9ba5c595365171b6adc72[m
+Author: Aminos <147380126+2497812382@users.noreply.github.com>
+Date:   Fri Feb 7 15:48:49 2025 +0800
+
+    Initial commit
