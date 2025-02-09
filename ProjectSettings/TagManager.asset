@@ -3,6 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+
+
   tags:
   - CheckRange
   - Enemy
@@ -10,11 +12,12 @@ TagManager:
   - Bullet
   - aaaBullet
   - Platform
+
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - ground
+  - 
   - Water
   - UI
   - 
