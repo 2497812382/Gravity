@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+
+
+  tags:
+  - CheckRange
+  - Enemy
+  - EnemyBody
+  - Bullet
+  - aaaBullet
+  - Platform
+
   layers:
   - Default
   - TransparentFX
