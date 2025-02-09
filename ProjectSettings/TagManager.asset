@@ -9,6 +9,7 @@ TagManager:
   - EnemyBody
   - Bullet
   - aaaBullet
+  - Platform
   layers:
   - Default
   - TransparentFX
