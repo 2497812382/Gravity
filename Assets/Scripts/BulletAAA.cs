@@ -18,7 +18,7 @@ public class BulletAAA : MonoBehaviour
         if (collision.gameObject.tag != "Enemy" 
             && collision.gameObject.tag != "CheckRange"
             && collision.gameObject.tag != "Player"
-            )
+            && collision.gameObject.tag != "Bullet")
         {
 
             Destroy(gameObject);
@@ -30,10 +30,6 @@ public class BulletAAA : MonoBehaviour
             Destroy(gameObject);
 
 
-        }else if (collision.gameObject.tag == "Bullet")
-        {
-            // 可能存在爆炸动画，后面再加
-            Destroy(gameObject);
         }
     }
 }
