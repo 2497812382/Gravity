@@ -5,19 +5,17 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     private Animator anim;
-    // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();    
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) // 判断和 aaa 相碰
     {
         if (other.gameObject.CompareTag("aaaBullet"))
         {
@@ -27,7 +25,7 @@ public class Platform : MonoBehaviour
         }
     }
     
-    void IcyExit()
+    void IcyExit() // 动画末尾的事件
     {
         anim.SetBool("IsIcy", false);
     }
