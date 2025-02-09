@@ -24,10 +24,14 @@ public class Door : MonoBehaviour
             Debug.Log("F!");
         }
         */ // 判断开门
-        if (KeyNumber == 9 && Keyboard.current.fKey.wasPressedThisFrame && PlayerNearby)
+        if (Keyboard.current.fKey.wasPressedThisFrame && PlayerNearby)
         {
-            anim.SetBool("IsOpen", true);
+            if (KeyNumber == 9)
+                anim.SetBool("IsOpen", true);
+            else
+                anim.SetBool("IsCantOpen", true);
         }
+        
     }
 
     // 下列三函数判断玩家是否在门处
@@ -50,5 +54,9 @@ public class Door : MonoBehaviour
     void OpentheDoorExit() // 动画末尾的事件
     {
         anim.SetBool("IsOpen", false);
+    }
+    void CantOpentheDoorExit() // 动画末尾的事件
+    {
+        anim.SetBool("IsCantOpen", false);
     }
 }
