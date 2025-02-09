@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.tag != "CheckRange" 
             && collision.gameObject.tag != "Enemy" 
             && collision.gameObject.tag != "EnemyBody"
-            && collision.gameObject.tag != "Bullet")
+            && collision.gameObject.tag != "aaaBullet")
         {
 
             Destroy(gameObject);
