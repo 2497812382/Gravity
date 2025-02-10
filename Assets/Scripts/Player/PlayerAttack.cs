@@ -13,15 +13,17 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float maxAngle;
     private float nextFire = 0.0F;
     [SerializeField] private bool isGrounded;
+    [SerializeField] private bool isReversed;
     private Player script;
+    private Transform playerTransform;
 
 
 
     private void Start()
     {
         script = transform.parent.GetComponent<Player>();
-        
 
+        playerTransform = transform.parent;
     }
 
    
@@ -29,10 +31,12 @@ public class PlayerAttack : MonoBehaviour
     private void Update()
     {
         isGrounded = script.IsGrounded();
+        isReversed = script.IsReversed();
 
 
         if (!isGrounded)
         {
+            
             WaaoFall(bulletSpeed, fireRate, minAngle, maxAngle);
         }
     }
@@ -76,7 +80,7 @@ public class PlayerAttack : MonoBehaviour
             nextFire = Time.time + fireRate;
             float randomAngle = Random.Range(minAngle, maxAngle);
             // 将随机角度转换为方向向量
-            Vector2 direction = Quaternion.Euler(0f, 0f, randomAngle) * Vector2.up;
+            Vector2 direction = Quaternion.Euler(0f, 0f, randomAngle) * playerTransform.up;
             // 实例化子弹并设置初始位置和方向
             GameObject bullet = Instantiate(aaaPrefab, transform.position, Quaternion.identity);
             bullet.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
