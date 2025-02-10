@@ -3,16 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-
-
-  tags:
-  - CheckRange
-  - Enemy
-  - EnemyBody
-  - Bullet
-  - aaaBullet
-  - Platform
-
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -49,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Back
+    uniqueID: 1593698841
+    locked: 0
+  - name: Middle
+    uniqueID: 187277755
+    locked: 0
+  - name: Front
+    uniqueID: 3592073747
     locked: 0
