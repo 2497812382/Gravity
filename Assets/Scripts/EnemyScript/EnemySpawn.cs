@@ -11,9 +11,10 @@ public class EnemySpawn : MonoBehaviour
     public int leftAreaNumber = 1, rightAreaNumber = 1;
     public float checkRadius;
     public GameObject enemyPrefab;
-    private GameObject leftSpawnArea, rightSpawnArea;
+    private GameObject leftSpawnArea, rightSpawnArea,playerObj;
     private Transform Area;
     private BoxCollider2D coll;
+    private Player player;
     public int targetEnmeyNumber = 0;
     // Start is called before the first frame update
     void Start()
@@ -21,11 +22,14 @@ public class EnemySpawn : MonoBehaviour
         leftEnemyNumber = rightEnemyNumber = 0;
         leftSpawnArea = GameObject.Find("LeftSpawnArea");
         rightSpawnArea = GameObject.Find("RightSpawnArea");
+        playerObj = GameObject.Find("Player");
+        player = playerObj.GetComponent<Player>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        targetEnmeyNumber = player.GetKeyTrue();  
         if (leftEnemyNumber + rightEnemyNumber >= targetEnmeyNumber) return;
         int i = 0;
         while ((++i) <= 50)
