@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Bullet
   - Platform
+  - Fire
   layers:
   - Default
   - TransparentFX
