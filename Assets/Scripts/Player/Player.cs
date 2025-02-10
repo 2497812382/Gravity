@@ -85,35 +85,42 @@ public class Player : MonoBehaviour
         }
     }
 
-    
+    void OnJump(InputValue value)
+    {
+        Vector2 movevalue = value.Get<Vector2>();
+        if (isGrounded) { 
+            if (!isReversed)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, movevalue.y * jumprate);
+            }else
+            {
+                rb.velocity = new Vector2(rb.velocity.x, -movevalue.y * jumprate);
+            }
+        }
+
+    }
 
     void OnMove(InputValue value)  
     {
+        Vector2 movevalue = value.Get<Vector2>();
         if (needReverse)
         {
             if (!isReversed)
             {
-                Vector2 movevalue = value.Get<Vector2>();
-                rb.velocity = new Vector2(movevalue.x * speed, movevalue.y * jumprate);
+                
+                rb.velocity = new Vector2(movevalue.x * speed, rb.velocity.y);
             }
             else
             {
-                Vector2 movevalue = -value.Get<Vector2>();
-                rb.velocity = new Vector2(movevalue.x * speed, movevalue.y * jumprate);
+                
+                rb.velocity = new Vector2(-movevalue.x * speed, rb.velocity.y);
             }
         }
         else
         {
-            Vector2 movevalue = value.Get<Vector2>();
-            if (!isReversed)
-            {
-                
-                rb.velocity = new Vector2(movevalue.x * speed, movevalue.y * jumprate);
-            }
-            else
-            {
-                rb.velocity = new Vector2(movevalue.x * speed, -movevalue.y * jumprate);
-            }
+ 
+                rb.velocity = new Vector2(movevalue.x * speed, rb.velocity.y);
+           
         }
     }
 
