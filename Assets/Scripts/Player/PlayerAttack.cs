@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float maxAngle;
     private float nextFire = 0.0F;
     [SerializeField] private bool isGrounded;
-    [SerializeField] private bool isReversed;
+
     private Player script;
     private Transform playerTransform;
 
@@ -31,7 +31,7 @@ public class PlayerAttack : MonoBehaviour
     private void Update()
     {
         isGrounded = script.IsGrounded();
-        isReversed = script.IsReversed();
+
 
 
         if (!isGrounded)

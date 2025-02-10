@@ -26,8 +26,6 @@ public class Bullet : MonoBehaviour
         }
         if (collision.gameObject.tag == "Player")//如果碰撞对象是玩家
         {
-
-            //调用player的受伤函数
             Destroy(gameObject);
             
         }
