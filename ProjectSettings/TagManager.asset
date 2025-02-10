@@ -10,6 +10,9 @@ TagManager:
   - Bullet
   - Platform
   - Fire
+  - Door
+  - Wall
+  - GravityZone
   layers:
   - Default
   - TransparentFX
