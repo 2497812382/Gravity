@@ -7,9 +7,9 @@ public class CameraControl : MonoBehaviour
 {
     public Rigidbody2D rb;
     private Vector2 position;
-    public Camera camera1;
-    public Camera camera2;
-    public Camera camera3;
+    public Camera upScene;
+    public Camera bornScene;
+    public Camera downScren;
     [Header("基本参数")]
     public float camera1UpEdge;
     public float camera1DownEdge;
@@ -28,21 +28,21 @@ public class CameraControl : MonoBehaviour
     {
        if(position.y<camera1DownEdge)
         {
-            camera1.enabled = false;
-            camera2.enabled = true;
-            camera3.enabled = false;
+            upScene.enabled = false;
+            bornScene.enabled = true;
+            downScren.enabled = false;
         }
        if (camera1UpEdge>position.y&&position.y>camera1DownEdge)
         {
-            camera1.enabled = true;
-            camera2.enabled = false;
-            camera3.enabled = false;
+            upScene.enabled = true;
+            bornScene.enabled = false;
+            downScren.enabled = false;
         }
        if(position.y>camera1UpEdge)
         {
-            camera1.enabled = false;
-            camera2.enabled = false;
-            camera3.enabled = true;
+            upScene.enabled = false;
+            bornScene.enabled = false;
+            downScren.enabled = true;
         }
 
     }
