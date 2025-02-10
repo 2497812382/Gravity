@@ -8,7 +8,7 @@ public class EnemySpawn : MonoBehaviour
 {
 
     private int leftEnemyNumber, rightEnemyNumber;
-    public int leftArenumber = 1, rightArenumber = 1;
+    public int leftAreaNumber = 1, rightAreaNumber = 1;
     public float checkRadius;
     public GameObject enemyPrefab;
     private GameObject leftSpawnArea, rightSpawnArea;
@@ -41,14 +41,14 @@ public class EnemySpawn : MonoBehaviour
             if (op == 0)
             {
                 ++leftEnemyNumber;
-                op = Random.Range(1, leftArenumber);
+                op = Random.Range(1, leftAreaNumber);
                 Area = leftSpawnArea.transform.Find("Area" + op.ToString());
                 rot = new Vector3(0, 0, 0);
             }
             else
             {
                 ++rightEnemyNumber;
-                op = Random.Range(1, rightArenumber);
+                op = Random.Range(1, rightAreaNumber);
                 Area = rightSpawnArea.transform.Find("Area" + op.ToString());
                 rot = new Vector3(0, 180, 0);
             }
