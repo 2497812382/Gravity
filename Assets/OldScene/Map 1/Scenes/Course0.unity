@@ -635,7 +635,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c3b3559a7d91d6340bf9024247d26a09, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.79607844, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3774,8 +3774,8 @@ SpriteShapeRenderer:
   m_ShapeTexture: {fileID: 0}
   m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: 0.030835629, y: -2.6682289, z: 0}
+    m_Extent: {x: 1.7230365, y: 0.5788286, z: 0}
   m_SpriteSortPoint: 0
 --- !u!4 &936995584
 Transform:
@@ -4723,7 +4723,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c3b3559a7d91d6340bf9024247d26a09, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.79607844, a: 1}
+  m_Color: {r: 0.9784366, g: 0.9784366, b: 0.9784366, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5036,7 +5036,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c3b3559a7d91d6340bf9024247d26a09, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.79607844, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
