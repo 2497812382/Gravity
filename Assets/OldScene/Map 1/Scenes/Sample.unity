@@ -2988,8 +2988,8 @@ SpriteShapeRenderer:
   m_ShapeTexture: {fileID: 0}
   m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: -0.030073881, y: -2.3090591, z: 0}
+    m_Extent: {x: 2.060272, y: 0.6482558, z: 0}
   m_SpriteSortPoint: 0
 --- !u!4 &484068152
 Transform:
@@ -4688,6 +4688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 727555213}
   - component: {fileID: 727555212}
+  - component: {fileID: 727555214}
   m_Layer: 3
   m_Name: PlayerAnimation
   m_TagString: Untagged
@@ -4741,7 +4742,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 1.5, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4762,6 +4763,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1263026152}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &727555214
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727555211}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ff6739faaea5e474b8b5b40bc165b9f8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &736806347
 PrefabInstance:
   m_ObjectHideFlags: 0

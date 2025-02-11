@@ -58,7 +58,7 @@ public class Player : MonoBehaviour
         FlipController();
         rbVertor = rb.velocity;
         CountTimeForFireOff();
-        animator.SetFloat("velocity", rbVertor.x);
+        animator.SetFloat("velocityX", (rbVertor.x<0?-rbVertor.x:rbVertor.x));
 
     }
 
