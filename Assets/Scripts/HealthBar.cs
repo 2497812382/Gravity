@@ -10,7 +10,8 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     private int health;
     public int temphealth = 2, maxhealth = 2;
-    private GameObject player;
+    private GameObject playerObj;
+    private Player player;
     private int playerHP;
     public GameObject heart1;
     public GameObject heart2;
@@ -20,7 +21,8 @@ public class HealthBar : MonoBehaviour
     private Image ima2;
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        playerObj = GameObject.FindWithTag("Player");
+        player = playerObj.GetComponent<Player>();
         health = maxhealth;
         anim1 = heart1.GetComponent<Animator>();
         ima1 = heart1.GetComponent<Image>();
@@ -32,7 +34,7 @@ public class HealthBar : MonoBehaviour
     void Update()
     {
         int Lasthealth = health;
-        //temphealth = player.HP;
+        temphealth = player.HP;
         health = temphealth;
         // 第一个心
         if (health >= 1)
