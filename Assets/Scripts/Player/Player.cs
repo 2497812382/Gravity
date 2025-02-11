@@ -209,7 +209,7 @@ public class Player : MonoBehaviour
     {
         isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
         isGravity = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGravity);
-        isIce = hysics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsIce);
+        isIce = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsIce);
     }
     private void OnDrawGizmos()
     {
