@@ -44,22 +44,13 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Jump"",
-                    ""type"": ""Value"",
-                    ""id"": ""d03d6a06-6b02-4015-a0ee-1a4934c69d4e"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""98217b15-ee92-4e64-88a1-98759b933b7a"",
-                    ""path"": ""<Keyboard>/r"",
+                    ""path"": ""<Keyboard>/o"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -99,28 +90,6 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""8c53f605-5218-4c78-9384-d7bbf2cb713a"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Jump"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""dd2c4d94-2764-40c3-ab51-cae3f54215a6"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -131,7 +100,6 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
         m_KeyBoard = asset.FindActionMap("KeyBoard", throwIfNotFound: true);
         m_KeyBoard_Reverse = m_KeyBoard.FindAction("Reverse", throwIfNotFound: true);
         m_KeyBoard_Move = m_KeyBoard.FindAction("Move", throwIfNotFound: true);
-        m_KeyBoard_Jump = m_KeyBoard.FindAction("Jump", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -195,14 +163,12 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
     private List<IKeyBoardActions> m_KeyBoardActionsCallbackInterfaces = new List<IKeyBoardActions>();
     private readonly InputAction m_KeyBoard_Reverse;
     private readonly InputAction m_KeyBoard_Move;
-    private readonly InputAction m_KeyBoard_Jump;
     public struct KeyBoardActions
     {
         private @PlayerController m_Wrapper;
         public KeyBoardActions(@PlayerController wrapper) { m_Wrapper = wrapper; }
         public InputAction @Reverse => m_Wrapper.m_KeyBoard_Reverse;
         public InputAction @Move => m_Wrapper.m_KeyBoard_Move;
-        public InputAction @Jump => m_Wrapper.m_KeyBoard_Jump;
         public InputActionMap Get() { return m_Wrapper.m_KeyBoard; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -218,9 +184,6 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
-            @Jump.started += instance.OnJump;
-            @Jump.performed += instance.OnJump;
-            @Jump.canceled += instance.OnJump;
         }
 
         private void UnregisterCallbacks(IKeyBoardActions instance)
@@ -231,9 +194,6 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
-            @Jump.started -= instance.OnJump;
-            @Jump.performed -= instance.OnJump;
-            @Jump.canceled -= instance.OnJump;
         }
 
         public void RemoveCallbacks(IKeyBoardActions instance)
@@ -255,6 +215,5 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
     {
         void OnReverse(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
-        void OnJump(InputAction.CallbackContext context);
     }
 }
