@@ -6,16 +6,20 @@ public class O : MonoBehaviour
 {
     private bool PlayerNearby;
     private SpriteRenderer sr;
-    public bool GravityZoneNearby = true;
+    public bool GravityZoneNearby = false;
+    private Player player;
     // Start is called before the first frame update
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        player = GetComponent<Player>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        GravityZoneNearby = player.IsGravity();
         // GravityZoneNearby=
         // Debug.Log(PlayerNearby);
         if (GravityZoneNearby)

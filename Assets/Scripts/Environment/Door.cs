@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour
 {
 
-    private bool PlayerNearby = false;
-    private GameObject player;
+    public bool PlayerNearby = false;
+    private Player player;
 
     public int KeyNumber = 0;
     private Animator anim;
@@ -16,7 +16,7 @@ public class Door : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        player = GameObject.Find("Player");
+        player = GameObject.Find("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
