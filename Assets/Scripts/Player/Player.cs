@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private bool isGravity;
     [SerializeField] private LayerMask whatIsGravity;
+    [SerializeField] private bool isIce;
+    [SerializeField] private LayerMask whatIsIce;
     [Space]
     [Header("是否反转操作")]
     [SerializeField] private bool needReverse;
@@ -87,20 +89,20 @@ public class Player : MonoBehaviour
         }
     }
 
-    void OnJump(InputValue value)
-    {
-        Vector2 movevalue = value.Get<Vector2>();
-        if (isGrounded) { 
-            if (!isReversed)
-            {
-                rb.velocity = new Vector2(rb.velocity.x, movevalue.y * jumprate);
-            }else
-            {
-                rb.velocity = new Vector2(rb.velocity.x, -movevalue.y * jumprate);
-            }
-        }
+    //void OnJump(InputValue value)
+    //{
+    //    Vector2 movevalue = value.Get<Vector2>();
+    //    if (isGrounded) { 
+    //        if (!isReversed)
+    //        {
+    //            rb.velocity = new Vector2(rb.velocity.x, movevalue.y * jumprate);
+    //        }else
+    //        {
+    //            rb.velocity = new Vector2(rb.velocity.x, -movevalue.y * jumprate);
+    //        }
+    //    }
 
-    }
+    //}
 
     void OnMove(InputValue value)  
     {
@@ -207,6 +209,7 @@ public class Player : MonoBehaviour
     {
         isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
         isGravity = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGravity);
+        isIce = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsIce);
     }
     private void OnDrawGizmos()
     {
