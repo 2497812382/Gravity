@@ -17,7 +17,7 @@ public class CameraControl : MonoBehaviour
 
     private void Awake()
     {
-       
+       rb = GetComponent<Rigidbody2D>();
     }
     private void Update()
     {
