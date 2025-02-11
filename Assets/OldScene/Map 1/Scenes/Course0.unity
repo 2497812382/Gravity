@@ -2358,8 +2358,8 @@ SpriteShapeRenderer:
   m_ShapeTexture: {fileID: 0}
   m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: 0.030835629, y: -2.6682289, z: 0}
-    m_Extent: {x: 1.7230365, y: 0.5788286, z: 0}
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   m_SpriteSortPoint: 0
 --- !u!4 &936995584
 Transform:
@@ -2893,11 +2893,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 393524396263091117, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 998839992622244361, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2974978815362653608, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_LocalScale.x
@@ -2909,7 +2909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3689476188649299221, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4280627426891800569, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2985,7 +2985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7510371877774097382, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7942235590476372145, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_Name

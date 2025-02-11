@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Platform : MonoBehaviour
+public class Ice : MonoBehaviour
 {
     Transform child1, child2;
+    private GameObject self;
     private Animator anim1,anim2;
     private float TimeGap = 5f;
     bool Tag = false;
@@ -15,6 +16,7 @@ public class Platform : MonoBehaviour
         child2 = transform.Find("Animation2");
         anim1 = child1.GetComponent<Animator>();
         anim2 = child2.GetComponent<Animator>();
+        self = gameObject;
     }
 
     void Update()
@@ -23,6 +25,7 @@ public class Platform : MonoBehaviour
         {
             if( Time.time > Uptime + TimeGap)
             {
+                self.layer = LayerMask.NameToLayer("Default");
                 Uptime = -1f;
                 Tag = false;
                 anim1.SetBool("IsIcy", false);
@@ -39,6 +42,7 @@ public class Platform : MonoBehaviour
             // Debug.Log("Icy!");
             Uptime = Time.time; 
             Tag = true;
+            self.layer = LayerMask.NameToLayer("Ice");
             anim1.SetBool("IsIcy",true);
             anim2.SetBool("IsIcy",true);
         }
