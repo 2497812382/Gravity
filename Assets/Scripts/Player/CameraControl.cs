@@ -7,17 +7,23 @@ public class CameraControl : MonoBehaviour
 {
     public Rigidbody2D rb;
     private Vector2 position;
-    public Camera upScene;
-    public Camera bornScene;
-    public Camera downScren;
+    private Camera upScene;
+    private Camera bornScene;
+    private Camera downScren;
+    private GameObject Map;
     [Header("基本参数")]
     public float camera1UpEdge;
     public float camera1DownEdge;
+
     
 
     private void Awake()
     {
-       rb = GetComponent<Rigidbody2D>();
+        Map = GameObject.Find("Map");
+        upScene = Map.transform.Find("Main Camera (1)").GetComponent<Camera>();
+        bornScene = Map.transform.Find("Main Camera").GetComponent<Camera>();
+        downScren = Map.transform.Find("Main Camera (2)").GetComponent<Camera>();
+        rb = GetComponent<Rigidbody2D>();
     }
     private void Update()
     {

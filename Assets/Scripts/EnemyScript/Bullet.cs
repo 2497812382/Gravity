@@ -25,7 +25,9 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Player")//如果碰撞对象是玩家
+
         {
+            collision.gameObject.GetComponent<Player>().Hurt(1);
             Destroy(gameObject);
             
         }

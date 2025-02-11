@@ -15,7 +15,7 @@ public class Button : MonoBehaviour
     {
         originalScale = transform.localScale;
         pressedScale = new Vector3(originalScale.x , originalScale.y * 0.8f);
-        Debug.Log(originalScale);
+
     }
 
 
