@@ -6,18 +6,20 @@ using UnityEngine.InputSystem;
 public class Door : MonoBehaviour
 {
     private bool PlayerNearby = false;
+    private GameObject player;
     public int KeyNumber = 0;
     private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        // KeyNumber = 
+        KeyNumber = player.GetKeyTrue();
         /*
         if (Keyboard.current.fKey.wasPressedThisFrame)
         {
