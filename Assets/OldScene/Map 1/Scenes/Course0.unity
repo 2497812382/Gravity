@@ -1788,7 +1788,7 @@ GameObject:
   - component: {fileID: 444381138}
   m_Layer: 0
   m_Name: Cage
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1940,7 +1940,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerNearby: 0
-  KeyNumber: 9
+  KeyNumber: 0
+  TargetKeyNumber: 9
 --- !u!1 &484068149
 GameObject:
   m_ObjectHideFlags: 0
@@ -3774,8 +3775,8 @@ SpriteShapeRenderer:
   m_ShapeTexture: {fileID: 0}
   m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: 0.030835629, y: -2.6682289, z: 0}
+    m_Extent: {x: 1.7230365, y: 0.5788286, z: 0}
   m_SpriteSortPoint: 0
 --- !u!4 &936995584
 Transform:

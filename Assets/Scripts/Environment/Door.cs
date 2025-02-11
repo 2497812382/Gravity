@@ -11,6 +11,7 @@ public class Door : MonoBehaviour
     private Player player;
 
     public int KeyNumber = 0;
+    public int TargetKeyNumber = 9;
     private Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class Door : MonoBehaviour
         */ // �жϿ���
         if (Keyboard.current.fKey.wasPressedThisFrame && PlayerNearby)
         {
-            if (KeyNumber == 9)
+            if (KeyNumber == TargetKeyNumber)
                 anim.SetBool("IsOpen", true);
             else
                 anim.SetBool("IsCantOpen", true);

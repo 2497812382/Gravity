@@ -132,11 +132,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 393524396263091117, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 998839992622244361, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2974978815362653608, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_LocalScale.x
@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3689476188649299221, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4280627426891800569, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_LocalPosition.x
@@ -220,7 +220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7510371877774097382, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7942235590476372145, guid: 38d7a6ff125df68459fc66c73890cb11, type: 3}
       propertyPath: m_Name
@@ -951,7 +951,7 @@ GameObject:
   - component: {fileID: 444381139}
   - component: {fileID: 444381141}
   m_Layer: 0
-  m_Name: Cage
+  m_Name: Door
   m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1100,11 +1100,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 444381135}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb4c2d51b78707f47861e63839c0053a, type: 3}
+  m_Script: {fileID: 11500000, guid: 713b84c6eb3fe6a479d5e567bc67779e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerNearby: 0
-  KeyNumber: 9
+  KeyNumber: 0
+  TargetKeyNumber: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,8 +2239,8 @@ SpriteShapeRenderer:
   m_ShapeTexture: {fileID: 0}
   m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: -0.0046498775, y: -2.2888927, z: 0}
-    m_Extent: {x: 2.1263747, y: 0.6684221, z: 0}
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   m_SpriteSortPoint: 0
 --- !u!1 &1943312585
 GameObject:
