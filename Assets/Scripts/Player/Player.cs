@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private bool isGravity;
+    [SerializeField] private LayerMask whatIsGravity;
     [Space]
     [Header("是否反转操作")]
     [SerializeField] private bool needReverse;
@@ -204,6 +206,7 @@ public class Player : MonoBehaviour
     private void CollsionCheck()
     {
         isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
+        isGravity = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGravity);
     }
     private void OnDrawGizmos()
     {
@@ -232,4 +235,11 @@ public class Player : MonoBehaviour
     {
         return isReversed;
     }
+
+
+    public bool IsGravity()
+    {
+        return isGravity;
+    }
+    
 }
