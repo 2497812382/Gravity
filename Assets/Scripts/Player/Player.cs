@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public float jumprate;
     public bool isOffFire = false;
     public bool isInvincible = false;
-    [SerializeField] private int HP = 2;
+    public int HP = 2;
     [SerializeField] private int Key;
     [SerializeField] private float invincibilityTime;
     [SerializeField] private float offFireTime = 2f;
