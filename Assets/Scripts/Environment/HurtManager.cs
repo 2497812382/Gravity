@@ -41,10 +41,7 @@ public class HurtManager : MonoBehaviour
                 }
 
             }
-            else if (gameObject.tag == "Bullet")
-            {
-                playerScript.Hurt(1);
-            }
+            
         }
     }
 

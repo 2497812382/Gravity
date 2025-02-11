@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     [Header("基础信息")]
     public bool isReversed;
     public float speed;
-    public float jumprate;
+    [SerializeField] float iceSpeedRate = 1.2f;
     public bool isOffFire = false;
     public bool isInvincible = false;
     public int HP = 2;
@@ -21,12 +21,23 @@ public class Player : MonoBehaviour
     [SerializeField] private float jumpForce;
     [Space]
     [Header("地面检测")]
-    public bool isGravity;
-    [SerializeField] private LayerMask whatIsGravity;
     [SerializeField] private bool isGrounded;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask whatIsGround;
+
+
+    public bool isGravity;
+    [SerializeField] private Transform gravityCheck;
+    [SerializeField] private LayerMask whatIsGravity;
+    [SerializeField] private float gravityCheckDistance;
+
+    private bool isIced;
+    [SerializeField] private Transform iceCheck;
+    [SerializeField] private LayerMask whatIsIce;
+    [SerializeField] private float iceCheckDistance;
+
+
     [Space]
     [Header("是否反转操作")]
     [SerializeField] private bool needReverse;
@@ -61,6 +72,10 @@ public class Player : MonoBehaviour
         rbVertor = rb.velocity;
         CountTimeForFireOff();
         animator.SetFloat("velocityX", (rbVertor.x<0?-rbVertor.x:rbVertor.x));
+        if (isIced)
+        {
+            IceSpeedUP();
+        }
 
     }
 
@@ -80,30 +95,20 @@ public class Player : MonoBehaviour
 
     void OnReverse(InputValue value)
     {
-        if (value.isPressed)
+        if (isGravity)
         {
-            isReversed = !isReversed; // �л�״̬
-            rb.gravityScale = -rb.gravityScale;
-
-            transform.Rotate(0, 180, 180);
-
-        }
-    }
-
-    void OnJump(InputValue value)
-    {
-        Vector2 movevalue = value.Get<Vector2>();
-        if (isGrounded) { 
-            if (!isReversed)
+            if (value.isPressed)
             {
-                rb.velocity = new Vector2(rb.velocity.x, movevalue.y * jumprate);
-            }else
-            {
-                rb.velocity = new Vector2(rb.velocity.x, -movevalue.y * jumprate);
+                isReversed = !isReversed; // �л�״̬
+                rb.gravityScale = -rb.gravityScale;
+
+                transform.Rotate(0, 180, 180);
+
             }
         }
-
     }
+
+    
 
     void OnMove(InputValue value)  
     {
@@ -210,11 +215,17 @@ public class Player : MonoBehaviour
     private void CollsionCheck()
     {
         isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
-        isGravity = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGravity);
+        isGravity = Physics2D.Raycast(gravityCheck.position, Vector2.down, gravityCheckDistance, whatIsGravity);
+        isIced = Physics2D.Raycast(iceCheck.position, Vector2.down, iceCheckDistance, whatIsIce);
     }
     private void OnDrawGizmos()
     {
+        Gizmos.color = Color.green;
         Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(gravityCheck.position, new Vector3(gravityCheck.position.x, gravityCheck.position.y - gravityCheckDistance));
+        Gizmos.color = new Color(0, 255, 255);
+        Gizmos.DrawLine(iceCheck.position, new Vector3(iceCheck.position.x, iceCheck.position.y - iceCheckDistance));
     }
 
 
@@ -238,5 +249,10 @@ public class Player : MonoBehaviour
     public bool IsReversed()
     {
         return isReversed;
+    }
+
+    public void IceSpeedUP()
+    {
+        rb.velocity = new Vector2(rb.velocity.x * iceSpeedRate, rb.velocity.y);
     }
 }
