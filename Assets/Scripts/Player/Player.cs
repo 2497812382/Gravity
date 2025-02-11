@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public float jumprate;
     public bool isOffFire = false;
     public bool isInvincible = false;
-    public int HP = 2;
+    [SerializeField] private int HP = 2;
     [SerializeField] private int Key;
     [SerializeField] private float invincibilityTime;
     [SerializeField] private float offFireTime = 2f;
@@ -25,10 +25,6 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private bool isGravity;
-    [SerializeField] private LayerMask whatIsGravity;
-    [SerializeField] private bool isIce;
-    [SerializeField] private LayerMask whatIsIce;
     [Space]
     [Header("是否反转操作")]
     [SerializeField] private bool needReverse;
@@ -46,7 +42,6 @@ public class Player : MonoBehaviour
     private float offFireTimer;
     private Animator animator;
 
-
     private void Awake()
     {
         //render = transform.Find("PlayerAnimation").GetComponent<SpriteRenderer>();
@@ -55,8 +50,7 @@ public class Player : MonoBehaviour
         var controls = new PlayerController();
         controls.KeyBoard.Enable();
         originalColor = render.material.color; // 保存原始颜色
-
-
+        animator = GetComponentInChildren<Animator>();
     }
     private void Update()
     {
@@ -64,6 +58,7 @@ public class Player : MonoBehaviour
         FlipController();
         rbVertor = rb.velocity;
         CountTimeForFireOff();
+        animator.SetFloat("velocityX", (rbVertor.x<0?-rbVertor.x:rbVertor.x));
 
     }
 
@@ -93,20 +88,20 @@ public class Player : MonoBehaviour
         }
     }
 
-    //void OnJump(InputValue value)
-    //{
-    //    Vector2 movevalue = value.Get<Vector2>();
-    //    if (isGrounded) { 
-    //        if (!isReversed)
-    //        {
-    //            rb.velocity = new Vector2(rb.velocity.x, movevalue.y * jumprate);
-    //        }else
-    //        {
-    //            rb.velocity = new Vector2(rb.velocity.x, -movevalue.y * jumprate);
-    //        }
-    //    }
+    void OnJump(InputValue value)
+    {
+        Vector2 movevalue = value.Get<Vector2>();
+        if (isGrounded) { 
+            if (!isReversed)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, movevalue.y * jumprate);
+            }else
+            {
+                rb.velocity = new Vector2(rb.velocity.x, -movevalue.y * jumprate);
+            }
+        }
 
-    //}
+    }
 
     void OnMove(InputValue value)  
     {
@@ -204,16 +199,11 @@ public class Player : MonoBehaviour
         this.Key += 1;
     }
 
-    public int GetKeyTrue()
-    {
-        return this.Key;
-    }
+
 
     private void CollsionCheck()
     {
         isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
-        isGravity = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGravity);
-        isIce = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsIce);
     }
     private void OnDrawGizmos()
     {
@@ -242,11 +232,4 @@ public class Player : MonoBehaviour
     {
         return isReversed;
     }
-
-
-    public bool IsGravity()
-    {
-        return isGravity;
-    }
-    
 }
