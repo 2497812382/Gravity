@@ -29,20 +29,20 @@ public class CameraControl : MonoBehaviour
        if(position.y<camera1DownEdge)
         {
             upScene.enabled = false;
-            bornScene.enabled = true;
-            downScren.enabled = false;
+            bornScene.enabled = false;
+            downScren.enabled = true;
         }
        if (camera1UpEdge>position.y&&position.y>camera1DownEdge)
         {
-            upScene.enabled = true;
-            bornScene.enabled = false;
+            upScene.enabled = false;
+            bornScene.enabled = true;
             downScren.enabled = false;
         }
        if(position.y>camera1UpEdge)
         {
-            upScene.enabled = false;
+            upScene.enabled = true;
             bornScene.enabled = false;
-            downScren.enabled = true;
+            downScren.enabled = false;
         }
 
     }

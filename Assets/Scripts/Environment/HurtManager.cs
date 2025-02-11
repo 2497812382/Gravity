@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.UnityLinker;
 using UnityEngine;
 
 public class HurtManager : MonoBehaviour

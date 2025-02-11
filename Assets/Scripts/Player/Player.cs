@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public float jumprate;
     public bool isOffFire = false;
     public bool isInvincible = false;
-    [SerializeField] private int HP = 2;
+    public int HP = 2;
     [SerializeField] private int Key;
     [SerializeField] private float invincibilityTime;
     [SerializeField] private float offFireTime = 2f;
@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float jumpForce;
     [Space]
     [Header("地面检测")]
+    public bool isGravity;
+    [SerializeField] private LayerMask whatIsGravity;
     [SerializeField] private bool isGrounded;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckDistance;
@@ -200,10 +202,15 @@ public class Player : MonoBehaviour
     }
 
 
+    public int GetKeyTrue()
+    {
+        return this.Key;
+    }
 
     private void CollsionCheck()
     {
         isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
+        isGravity = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGravity);
     }
     private void OnDrawGizmos()
     {

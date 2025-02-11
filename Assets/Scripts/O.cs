@@ -19,7 +19,7 @@ public class O : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GravityZoneNearby = player.IsGravity();
+        GravityZoneNearby = player.isGravity;
         // GravityZoneNearby=
         // Debug.Log(PlayerNearby);
         if (GravityZoneNearby)

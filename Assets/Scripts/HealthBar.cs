@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static Unity.Burst.Intrinsics.X86;
 
@@ -61,6 +62,12 @@ public class HealthBar : MonoBehaviour
             {
                 anim2.SetBool("IsFlash", true);
             }
+        }
+        if (health == 0)
+        {
+            SceneManager.LoadScene(4);
+            PlayerPrefs.SetInt("LevelNumber", SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1;
         }
     }
 }
