@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,2107 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Queen_All_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 580
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9861b118537bd4d8d4aa6e836d0c6a
+      internalID: 1120557908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 580
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991ab975035e8bf4f8016f9b79f8ce8a
+      internalID: 1535012465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 580
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0e65ba939085846ac27b3ac17020d2
+      internalID: 487354096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 579
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b615fbf1b3dc6ae41996f00db9988dd9
+      internalID: 1375859786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 556
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa31c5120c3349e48b43d39ba137a5dc
+      internalID: -1674413335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 556
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152eb55dbdf585e48a0ae08af6abe25b
+      internalID: 1818215553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 556
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564a7d2eb4b0277499358f6b47608e94
+      internalID: 622163659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 556
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1daf83b41b0f343a8658392c5454b1
+      internalID: -1358285387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 532
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5b50017d5a7a2498dffccfbc2166ab
+      internalID: -795744318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 532
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413980c472244b24295c663aebdb591a
+      internalID: -1713323793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_10
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 532
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98c420195950384b8fe450216068d4e
+      internalID: 1784313497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 532
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79803efdc44c2f04294ee0f8e010f142
+      internalID: 562742683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 508
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9042ed6c1b68e843b3c2517de4fffb6
+      internalID: -556828759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 508
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b50b4c6c99e92d43a3a21d2d8e7ffe2
+      internalID: -1767654161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_14
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 508
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25af58170327d38469134693dfe5d830
+      internalID: -185070839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 508
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c727a8fdfd80ba84f95ccdaa9c8a667b
+      internalID: -1996140159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 485
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a16549e8b201f4c9d7bbbe72f4de57
+      internalID: 1308934639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_17
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 484
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f95ab30e4eda454893b4dc590bf7aa6
+      internalID: 1742719664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_18
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 485
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50897abf6838600408d350f07e267916
+      internalID: 777021880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_19
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 484
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ad6363ca70f3d4e8c5206b04dc47da
+      internalID: -629417373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_20
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 461
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8fc89132668e94eb4217032d4f9dc6
+      internalID: 379352720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_21
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 460
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28541129f3bb94b4db4ee5d0e2a790ad
+      internalID: -1252000638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 461
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6609630cf595a8f41a99e7704c77f45d
+      internalID: 1091211048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_23
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 460
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372407c0e314dc44b8b4352ce82f7de7
+      internalID: -331406520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 436
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91522adabbe02aa4b8ad79c9c1b74a49
+      internalID: 1487180437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_25
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 436
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6c8e1803b66764e9d5fbb07fddf933
+      internalID: 1144729127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_26
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 436
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60450c8af5e39954c842a8d190263e98
+      internalID: 667383572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_27
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 435
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be3e4f2f6d7efe47bb98e28a2fb8daa
+      internalID: 371086600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_28
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 412
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ce5edaf864cbb449e1dbfb1d465685
+      internalID: 44831722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 412
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c788e98f4b8897f479ac9d1140100384
+      internalID: 1985804359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_30
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 412
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceab548f564b80949a32d494d9881330
+      internalID: -704878495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_31
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 412
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6420fc59e993df445b6ff69e9392b52f
+      internalID: -2066309992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_32
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 388
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84d4fa334c708b43bbe1672ee268076
+      internalID: 261635149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_33
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 388
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1924327c227827c44aeb20317177319e
+      internalID: 1093331068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_34
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 388
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7b0f2024fbf5543b0dd143a8b1ba7e
+      internalID: 808453988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_35
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 391
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb982384ffb87e49b825d2c0fbdd2bb
+      internalID: -1603880054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 364
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7790b47edfcefb44d941bf2683ad893c
+      internalID: 1478893247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_37
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 364
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea81a2a4ab6ef4c4da879f401bf37536
+      internalID: 1443323308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_38
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 364
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd0a28011c78e2418a20c36b5075051
+      internalID: 1217714521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_39
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 367
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd67c63f01b51ff419340dde5bb97c23
+      internalID: 1916760223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_40
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 340
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa630f79a42ae2c4a86f9939780e0f38
+      internalID: -1934898467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_41
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 340
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef9ae83561006a4c9bb9cde3bdd504a
+      internalID: 1000536580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_42
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 340
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74afb903ac26e34990ca6206599189c
+      internalID: -261416327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_43
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 343
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c96eb6a40d61a43ad91aa611be7a50
+      internalID: -1302883941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_44
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 316
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809dee82bd840eb4ab95d03a28c4a0ad
+      internalID: -65871797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_45
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 316
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069d94cd03a095947b6c6abd2bc880c3
+      internalID: -1497848887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_46
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 316
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68391ae4f45882c4c8ac905f42d2479a
+      internalID: -1721416663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_47
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 319
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5acd68e108e91b46ab5ae5643254f59
+      internalID: -1948125289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 292
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3855c4c0cd1669b488bcc978a5ac1555
+      internalID: -1026464111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_49
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 292
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03da7f1b1612704c814c4c3c68fad1b
+      internalID: -1457398140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_50
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 292
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79722b076e1ecfa4488b6b9c9d61dfe3
+      internalID: -1537292080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_51
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 292
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a41debdbc84a54cad516d8480d4d32
+      internalID: -912546692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_52
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 268
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f6956853e400048908e9e89530d243
+      internalID: -295063979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_53
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 268
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1743a5fcf41d1b9429d3bf7ece476714
+      internalID: 831154068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_54
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 268
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3644c2d4699e087438c792a2bb32ab95
+      internalID: 449782269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_55
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 268
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fa86a102c8b8440b65a2c5ed19647a
+      internalID: -928928281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_56
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 244
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20971d44fb0eee844b0e9a09323a3837
+      internalID: -1505083918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_57
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 244
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58162562b769d614c966ed09d6ef4ffd
+      internalID: 1371169019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_58
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 244
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca09dd6b304776c4b9c8cba0ac2ec08c
+      internalID: 1827580994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_59
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 244
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a19f9f5f84052419ebbddd6385f337
+      internalID: 1063156023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_60
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 220
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c59ae9a1c84ace46b84410a57d5a85a
+      internalID: 1324359565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 220
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c8aef179b060447ab12c20adc5f769
+      internalID: 1117970236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_62
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 220
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7bbe43461c62d4e998f76014ea503f
+      internalID: 796220776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_63
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 220
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fef52fd879302d478e9d8b10d988e43
+      internalID: 1579691076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_64
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 196
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054747b6c43f2df4aabf66ce16996e71
+      internalID: 1181087279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_65
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 196
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fcb937c143f3c41bd35a1cffc2f470
+      internalID: 1840987391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_66
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 196
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01999e97417531c4ebddbafc449541b9
+      internalID: -1545488506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_67
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 196
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3a5d89bcc0311489d44e4adf39102c
+      internalID: 886592771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_68
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 172
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565098576a2fb544085f7f4b5d10d097
+      internalID: 627262666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_69
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 172
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22be65c401f90f449f1c34cce079ab0
+      internalID: -1881814509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_70
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 172
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60295899a788109489bed1a80aed5208
+      internalID: -697258068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_71
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 172
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7130ec503a0bce4dad972e317411583
+      internalID: -620597604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_72
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 148
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562c845cfd8200e468d2543e60e9f62d
+      internalID: -637390490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_73
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 148
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d458e72cb2d7fc940b64720f3d781265
+      internalID: 1120374833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_74
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 148
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3849e71cbe657b64f82bbb934a92721e
+      internalID: 1785067411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_75
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 148
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeb1db9c668ef04f9b1eadfd3a90185
+      internalID: 507701116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_76
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 124
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287e9a9130786904aa22c2cce71fd114
+      internalID: 1509081565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_77
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 124
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c11af0e52a03dc41a7d77c4426019c9
+      internalID: -621923585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_78
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 124
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf997ff3c3d3dde46899c1d80a286d0f
+      internalID: 331174797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_79
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 124
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3af998927c03a43b0d2a8a9372591b
+      internalID: 1569081329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_80
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 100
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615e29a06f326df49bd79e5f901adb01
+      internalID: -939851724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_81
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 100
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9c14dfb8e90dc4aa77028db76894d5
+      internalID: -268386369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_82
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 100
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4da5725c1e8044e858237845ccf17f
+      internalID: 1533111811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_83
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 100
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d521eccadec030a4bbdc07e8473e233a
+      internalID: 1355526279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_84
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 76
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61979b75df32d34428d0a60d5834757d
+      internalID: -760696636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_85
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 76
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85ba7c085727c345be32bfb84bed035
+      internalID: -245848525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_86
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 76
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4f4a90cadd396408e2f7c46db8b3c3
+      internalID: -454934502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_87
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 76
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004f00abfdee0984a968102118dcf83b
+      internalID: 86042548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_88
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 52
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b53cab7878bcfa4ca7dee66eff0503c
+      internalID: -836164254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_89
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 52
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0d3ba8e174cc84cb247949895890b9
+      internalID: -1397328466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_90
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 52
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d9041537a3f454fb59d9fcf2ef1d59
+      internalID: -1696227934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_91
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 52
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983471b552e13824eaad31c431e3722c
+      internalID: 1470021557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_92
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 28
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e404497ffa6677045bdb808127461e9a
+      internalID: -1993638526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_93
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 28
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d47bcd6e796b44dae6149642f6acfe
+      internalID: -1601273080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_94
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 28
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70e98c0954ac19428f36116bebc9b56
+      internalID: -213993194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_95
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 28
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164a5f8395ac88444be698fadf7f4441
+      internalID: 1238559021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_96
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71c23704cc122746ba5686d38ec9d3e
+      internalID: -1805217062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_97
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 4
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f151087443f33ca48a5739dbdc981fce
+      internalID: -1177306118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_98
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 4
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a761fad45bbd2479b8779f8d2d4900
+      internalID: -1277418905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Queen_All_99
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 4
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36053480b314b041bd3425af5f19402
+      internalID: 413955137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +2219,107 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Queen_All_0: 1120557908
+      Queen_All_1: 1535012465
+      Queen_All_10: 1784313497
+      Queen_All_11: 562742683
+      Queen_All_12: -556828759
+      Queen_All_13: -1767654161
+      Queen_All_14: -185070839
+      Queen_All_15: -1996140159
+      Queen_All_16: 1308934639
+      Queen_All_17: 1742719664
+      Queen_All_18: 777021880
+      Queen_All_19: -629417373
+      Queen_All_2: 487354096
+      Queen_All_20: 379352720
+      Queen_All_21: -1252000638
+      Queen_All_22: 1091211048
+      Queen_All_23: -331406520
+      Queen_All_24: 1487180437
+      Queen_All_25: 1144729127
+      Queen_All_26: 667383572
+      Queen_All_27: 371086600
+      Queen_All_28: 44831722
+      Queen_All_29: 1985804359
+      Queen_All_3: 1375859786
+      Queen_All_30: -704878495
+      Queen_All_31: -2066309992
+      Queen_All_32: 261635149
+      Queen_All_33: 1093331068
+      Queen_All_34: 808453988
+      Queen_All_35: -1603880054
+      Queen_All_36: 1478893247
+      Queen_All_37: 1443323308
+      Queen_All_38: 1217714521
+      Queen_All_39: 1916760223
+      Queen_All_4: -1674413335
+      Queen_All_40: -1934898467
+      Queen_All_41: 1000536580
+      Queen_All_42: -261416327
+      Queen_All_43: -1302883941
+      Queen_All_44: -65871797
+      Queen_All_45: -1497848887
+      Queen_All_46: -1721416663
+      Queen_All_47: -1948125289
+      Queen_All_48: -1026464111
+      Queen_All_49: -1457398140
+      Queen_All_5: 1818215553
+      Queen_All_50: -1537292080
+      Queen_All_51: -912546692
+      Queen_All_52: -295063979
+      Queen_All_53: 831154068
+      Queen_All_54: 449782269
+      Queen_All_55: -928928281
+      Queen_All_56: -1505083918
+      Queen_All_57: 1371169019
+      Queen_All_58: 1827580994
+      Queen_All_59: 1063156023
+      Queen_All_6: 622163659
+      Queen_All_60: 1324359565
+      Queen_All_61: 1117970236
+      Queen_All_62: 796220776
+      Queen_All_63: 1579691076
+      Queen_All_64: 1181087279
+      Queen_All_65: 1840987391
+      Queen_All_66: -1545488506
+      Queen_All_67: 886592771
+      Queen_All_68: 627262666
+      Queen_All_69: -1881814509
+      Queen_All_7: -1358285387
+      Queen_All_70: -697258068
+      Queen_All_71: -620597604
+      Queen_All_72: -637390490
+      Queen_All_73: 1120374833
+      Queen_All_74: 1785067411
+      Queen_All_75: 507701116
+      Queen_All_76: 1509081565
+      Queen_All_77: -621923585
+      Queen_All_78: 331174797
+      Queen_All_79: 1569081329
+      Queen_All_8: -795744318
+      Queen_All_80: -939851724
+      Queen_All_81: -268386369
+      Queen_All_82: 1533111811
+      Queen_All_83: 1355526279
+      Queen_All_84: -760696636
+      Queen_All_85: -245848525
+      Queen_All_86: -454934502
+      Queen_All_87: 86042548
+      Queen_All_88: -836164254
+      Queen_All_89: -1397328466
+      Queen_All_9: -1713323793
+      Queen_All_90: -1696227934
+      Queen_All_91: 1470021557
+      Queen_All_92: -1993638526
+      Queen_All_93: -1601273080
+      Queen_All_94: -213993194
+      Queen_All_95: 1238559021
+      Queen_All_96: -1805217062
+      Queen_All_97: -1177306118
+      Queen_All_98: -1277418905
+      Queen_All_99: 413955137
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
