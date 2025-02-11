@@ -6,32 +6,40 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
-    public bool PlayerNearby = true;
+
+    private bool PlayerNearby = false;
+    private GameObject player;
+
     public int KeyNumber = 0;
     private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        // KeyNumber = 
+        KeyNumber = player.GetKeyTrue();
         /*
         if (Keyboard.current.fKey.wasPressedThisFrame)
         {
             Debug.Log("F!");
         }
-        */ // ÅÐ¶Ï¿ªÃÅ
-        if (KeyNumber == 9 && Keyboard.current.fKey.wasPressedThisFrame && PlayerNearby)
+        */ // ï¿½Ð¶Ï¿ï¿½ï¿½ï¿½
+        if (Keyboard.current.fKey.wasPressedThisFrame && PlayerNearby)
         {
-            anim.SetBool("IsOpen", true);
+            if (KeyNumber == 9)
+                anim.SetBool("IsOpen", true);
+            else
+                anim.SetBool("IsCantOpen", true);
         }
+        
     }
 
-    // ÏÂÁÐÈýº¯ÊýÅÐ¶ÏÍæ¼ÒÊÇ·ñÔÚÃÅ´¦
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Å´ï¿½
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
@@ -49,7 +57,7 @@ public class Door : MonoBehaviour
             PlayerNearby = false;
     }
     
-    void OpentheDoorExit() // ¶¯»­Ä©Î²µÄÊÂ¼þ
+    void OpentheDoorExit() // ï¿½ï¿½ï¿½ï¿½Ä©Î²ï¿½ï¿½ï¿½Â¼ï¿½
     {
         anim.SetBool("IsOpen", false);
         EntertheNextLevel();
@@ -57,5 +65,9 @@ public class Door : MonoBehaviour
     void EntertheNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    void CantOpentheDoorExit() // ï¿½ï¿½ï¿½ï¿½Ä©Î²ï¿½ï¿½ï¿½Â¼ï¿½
+    {
+        anim.SetBool("IsCantOpen", false);
     }
 }
