@@ -196,7 +196,10 @@ public class Player : MonoBehaviour
         this.Key += 1;
     }
 
-
+    public int GetKeyTrue()
+    {
+        return this.Key;
+    }
 
     private void CollsionCheck()
     {
