@@ -17,8 +17,9 @@ public class WhenDead : MonoBehaviour
     {
         if(health == 0)
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(4);
             PlayerPrefs.SetInt("LevelNumber", SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1;
         }
     }
 }

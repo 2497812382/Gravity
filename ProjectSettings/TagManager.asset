@@ -13,6 +13,8 @@ TagManager:
   - Door
   - Wall
   - GravityZone
+  - Key
+  - Button
   layers:
   - Default
   - TransparentFX
