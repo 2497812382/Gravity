@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    private Animator anim;
+    Transform child1, child2;
+    private Animator anim1,anim2;
+    private float TimeGap = 5f;
+    bool Tag = false;
+    float Uptime = -1f;
     void Start()
     {
-        anim = GetComponent<Animator>();    
+        child1 = transform.Find("Animation");
+        child2 = transform.Find("Animation2");
+        anim1 = child1.GetComponent<Animator>();
+        anim2 = child2.GetComponent<Animator>();
     }
 
     void Update()
     {
-        
+        if (Tag)
+        {
+            if( Time.time > Uptime + TimeGap)
+            {
+                Uptime = -1f;
+                Tag = false;
+                anim1.SetBool("IsIcy", false);
+                anim2.SetBool("IsIcy", false);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) // 判断和 aaa 相碰
@@ -21,12 +37,11 @@ public class Platform : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             // Debug.Log("Icy!");
-            anim.SetBool("IsIcy",true);
+            Uptime = Time.time; 
+            Tag = true;
+            anim1.SetBool("IsIcy",true);
+            anim2.SetBool("IsIcy",true);
         }
     }
     
-    void IcyExit() // 动画末尾的事件
-    {
-        anim.SetBool("IsIcy", false);
-    }
 }
