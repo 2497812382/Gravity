@@ -18,6 +18,7 @@ public class StartScene : MonoBehaviour
         if (Keyboard.current.anyKey.wasPressedThisFrame)
         {
             SceneManager.LoadScene(1);
+            Time.timeScale = 1;
         }
     }
 }

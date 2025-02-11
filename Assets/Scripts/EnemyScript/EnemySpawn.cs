@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class EnemySpawn : MonoBehaviour
 {
 
-    private int leftEnemyNumber, rightEnemyNumber;
+    public int leftEnemyNumber, rightEnemyNumber;
     public int leftAreaNumber = 1, rightAreaNumber = 1;
     public float checkRadius;
     public GameObject enemyPrefab;
@@ -39,21 +39,19 @@ public class EnemySpawn : MonoBehaviour
             if (rightEnemyNumber >= 2) op = 0;
             if (leftEnemyNumber >= 2 && rightEnemyNumber >= 2)
             {
-                Debug.Log("TooManyEnemy");
+                break;
             }
             Vector3 rot;
             if (op == 0)
             {
-                ++leftEnemyNumber;
-                op = Random.Range(1, leftAreaNumber);
-                Area = leftSpawnArea.transform.Find("Area" + op.ToString());
+                int top = Random.Range(1, leftAreaNumber);
+                Area = leftSpawnArea.transform.Find("Area" + top.ToString());
                 rot = new Vector3(0, 0, 0);
             }
             else
             {
-                ++rightEnemyNumber;
-                op = Random.Range(1, rightAreaNumber);
-                Area = rightSpawnArea.transform.Find("Area" + op.ToString());
+                int top = Random.Range(1, rightAreaNumber);
+                Area = rightSpawnArea.transform.Find("Area" + top.ToString());
                 rot = new Vector3(0, 180, 0);
             }
             coll = Area.GetComponent<BoxCollider2D>();
@@ -77,6 +75,8 @@ public class EnemySpawn : MonoBehaviour
             }
             if (isValid)
             {
+                if (op == 0) ++leftEnemyNumber;
+                else ++rightEnemyNumber;
                 Instantiate(enemyPrefab, randomPosition, Quaternion.Euler(rot));
                 break;
             }

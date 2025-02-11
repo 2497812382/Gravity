@@ -19,12 +19,12 @@ public class Key : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Player")
+        if (other.gameObject.name == "Player" && !other.isTrigger)
         {
-            player.GetKey();
+            Debug.Log("!");
             self.SetActive(false);
+            player.GetKey();
         }
-            
     }
 
 }
