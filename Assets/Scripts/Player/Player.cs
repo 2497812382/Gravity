@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
     private Color originalColor; // 玩家原始颜色
     private float flashDuration = 0.3f; // 闪烁周期
     private float offFireTimer;
+    private Animator animator;
 
     private void Awake()
     {
@@ -49,6 +50,7 @@ public class Player : MonoBehaviour
         var controls = new PlayerController();
         controls.KeyBoard.Enable();
         originalColor = render.material.color; // 保存原始颜色
+        animator = GetComponentInChildren<Animator>();
     }
     private void Update()
     {
@@ -56,6 +58,7 @@ public class Player : MonoBehaviour
         FlipController();
         rbVertor = rb.velocity;
         CountTimeForFireOff();
+        animator.SetFloat("velocity", rbVertor.x);
 
     }
 
