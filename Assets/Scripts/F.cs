@@ -11,7 +11,7 @@ public class F : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        doorObj = GameObject.Find("Door");
+        doorObj = GameObject.FindGameObjectsWithTag("Door")[0];
          if (doorObj != null)
         {
             //Debug.Log("A");

@@ -25,7 +25,7 @@ public class AD : MonoBehaviour
     void Update()
     {
         PlayerNearby = doorScript.PlayerNearby;
-        // Debug.Log(PlayerNearby);
+        Debug.Log(PlayerNearby);
         if (PlayerNearby && FirstCome)
         {
             
