@@ -12,7 +12,7 @@ public class AD : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        doorObj = GameObject.Find("Door");
+        doorObj = GameObject.Find("Cage");
         if (doorObj != null)
         {
             // Debug.Log("A");
@@ -25,7 +25,7 @@ public class AD : MonoBehaviour
     void Update()
     {
         PlayerNearby = doorScript.PlayerNearby;
-        Debug.Log(PlayerNearby);
+
         if (PlayerNearby && FirstCome)
         {
             

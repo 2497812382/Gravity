@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask whatIsGravity;
     [SerializeField] private float gravityCheckDistance;
 
-    private bool isIced;
+    [SerializeField] private bool isIced;
     [SerializeField] private Transform iceCheck;
     [SerializeField] private LayerMask whatIsIce;
     [SerializeField] private float iceCheckDistance;
@@ -72,10 +72,7 @@ public class Player : MonoBehaviour
         rbVertor = rb.velocity;
         CountTimeForFireOff();
         animator.SetFloat("velocityX", (rbVertor.x<0?-rbVertor.x:rbVertor.x));
-        if (isIced)
-        {
-            IceSpeedUP();
-        }
+        
 
     }
 
@@ -117,13 +114,27 @@ public class Player : MonoBehaviour
         {
             if (!isReversed)
             {
-                
-                rb.velocity = new Vector2(movevalue.x * speed, rb.velocity.y);
+                if (isIced)
+                {
+                    rb.velocity = new Vector2(movevalue.x * speed * iceSpeedRate, rb.velocity.y);
+                }else
+                {
+
+                    rb.velocity = new Vector2(movevalue.x * speed, rb.velocity.y);
+                }
             }
             else
             {
-                
-                rb.velocity = new Vector2(-movevalue.x * speed, rb.velocity.y);
+
+                if (isIced)
+                {
+                    rb.velocity = new Vector2(movevalue.x * speed * iceSpeedRate, rb.velocity.y);
+                }
+                else
+                {
+
+                    rb.velocity = new Vector2(movevalue.x * speed, rb.velocity.y);
+                }
             }
         }
         else
@@ -214,18 +225,30 @@ public class Player : MonoBehaviour
 
     private void CollsionCheck()
     {
-        isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
-        isGravity = Physics2D.Raycast(gravityCheck.position, Vector2.down, gravityCheckDistance, whatIsGravity);
-        isIced = Physics2D.Raycast(iceCheck.position, Vector2.down, iceCheckDistance, whatIsIce);
+        isGrounded = Physics2D.Raycast(groundCheck.position, -transform.up, groundCheckDistance, whatIsGround);
+        isGravity = Physics2D.Raycast(gravityCheck.position, -transform.up, gravityCheckDistance, whatIsGravity);
+        isIced = Physics2D.Raycast(iceCheck.position, -transform.up, iceCheckDistance, whatIsIce);
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(gravityCheck.position, new Vector3(gravityCheck.position.x, gravityCheck.position.y - gravityCheckDistance));
-        Gizmos.color = new Color(0, 255, 255);
-        Gizmos.DrawLine(iceCheck.position, new Vector3(iceCheck.position.x, iceCheck.position.y - iceCheckDistance));
+        if (isReversed)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y + groundCheckDistance));
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawLine(gravityCheck.position, new Vector3(gravityCheck.position.x, gravityCheck.position.y + gravityCheckDistance));
+            Gizmos.color = new Color(0, 255, 255);
+            Gizmos.DrawLine(iceCheck.position, new Vector3(iceCheck.position.x, iceCheck.position.y + iceCheckDistance));
+        }
+        else
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawLine(gravityCheck.position, new Vector3(gravityCheck.position.x, gravityCheck.position.y - gravityCheckDistance));
+            Gizmos.color = new Color(0, 255, 255);
+            Gizmos.DrawLine(iceCheck.position, new Vector3(iceCheck.position.x, iceCheck.position.y - iceCheckDistance));
+        }
     }
 
 
@@ -251,8 +274,5 @@ public class Player : MonoBehaviour
         return isReversed;
     }
 
-    public void IceSpeedUP()
-    {
-        rb.velocity = new Vector2(rb.velocity.x * iceSpeedRate, rb.velocity.y);
-    }
+   
 }

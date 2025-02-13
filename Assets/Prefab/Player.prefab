@@ -410,7 +410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isReversed: 0
   speed: 5
-  jumprate: 0
+  iceSpeedRate: 0.5
   isOffFire: 0
   isInvincible: 0
   HP: 100
@@ -433,7 +433,7 @@ MonoBehaviour:
   iceCheck: {fileID: 7344931883941010600}
   whatIsIce:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   iceCheckDistance: 0.27
   needReverse: 0
   rbVertor: {x: 0, y: 0}

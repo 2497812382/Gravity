@@ -12,7 +12,7 @@ public class O : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        player = GetComponent<Player>();
+        player = GameObject.Find("Player").GetComponent<Player>();
 
     }
 
