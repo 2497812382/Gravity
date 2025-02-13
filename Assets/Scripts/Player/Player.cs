@@ -67,7 +67,9 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
+        
         CollsionCheck();
+
         FlipController();
         rbVertor = rb.velocity;
         CountTimeForFireOff();
@@ -110,6 +112,10 @@ public class Player : MonoBehaviour
     void OnMove(InputValue value)  
     {
         Vector2 movevalue = value.Get<Vector2>();
+        if (isGrounded)
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
         if (needReverse)
         {
             if (!isReversed)
